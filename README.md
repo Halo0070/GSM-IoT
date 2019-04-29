@@ -4,4 +4,7 @@
 # 설치하기
 download 폴더를 다운 받으세요
 
-Eclipse neon 3 설치(파일 용량이 커서 올리지 못해서 따로 다운받으세요)
+-아래있는 것은 파일 용량이 커서 올리지 못해서 따로 다운받으세요-
+Eclipse IDE for Java EE Developers(https://www.eclipse.org/downloads/packages/release/neon/3)
+jdk8 버전, 자신의 운영체제와 맞는 것 다운(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+mongodb-win32-x86_64-2008plus-ssl-4.0.6-signed.msi 다운(https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl)
