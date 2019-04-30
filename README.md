@@ -11,3 +11,5 @@ Eclipse IDE for Java EE Developers(https://www.eclipse.org/downloads/packages/re
 jdk8 버전, 자신의 운영체제와 맞는 것 다운(https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
 mongodb-win32-x86_64-2008plus-ssl-4.0.6-signed.msi 다운(https://www.mongodb.org/dl/win32/x86_64-2008plus-ssl)
+
+# IoTServer.zip 파일을 다운 받아서 이클립스의 workspace 폴더에 추가하세요
