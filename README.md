@@ -18,7 +18,7 @@ mongodb-win32-x86_64-2008plus-ssl-4.0.6-signed.msi 다운(https://www.mongodb.or
 
 서버 작동하기
 ===========
-1.cmd를 관리자 권한으로 실행하고 mosquitto가 깔려 있는 경로까지 간 후 mosquitto -v를 입력하여 mosquitto 서버를 작동시키십시오.(만약 error가 뜨면 작업관리자를 실행하여 mosquitto.exe를 작업끝내기를 한 후 다시 실행해 보십시오.
+1.cmd를 관리자 권한으로 실행하고 mosquitto가 깔려 있는 경로까지 간 후 mosquitto -v를 입력하여 mosquitto 서버를 작동시키십시오.(만약 error가 뜨면 작업관리자를 실행하여 mosquitto.exe를 작업끝내기를 한 후 다시 실행해 보십시오.)
 
 2.cmd를 관리자 권한으로 실행하고 1번과 같이 경로까지 간 후 mosquitto_sub -t iot -p 1883(1883은 포트번호)을 입력하여 수신받는 서버를 작동시키십시오.
 
