@@ -1,4 +1,4 @@
-GSM-IoT
+﻿GSM-IoT
 =============
 재미있는 IoT 수업시간에 배우는 IoT! mosquitto를 이용해서 mongo DB, Web 연결하기 등 서버를 통해 피지컬 컴퓨팅(아두이노) 구동해보기
 
@@ -31,4 +31,4 @@ mongodb 실행
 
 2.cmd를 실행시켜서 mongodb의 bin파일 경로까지 가세요.
 
-3.그 뒤 **mongod --dbpath D:\한 곳에 모은 폴더 이름\var**을 입력하고 waiting connection 포트번호 이런식으로 뜨면은 성공한겁니다.(C드라이브면 C로) 
+3.그 뒤 **mongod --dbpath D:\한 곳에 모은 폴더 이름\var**을 입력하고 **waiting connection 포트번호** 이런 식으로 뜨면 성공한겁니다.(C드라이브면 C로) 
