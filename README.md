@@ -32,3 +32,7 @@ mongodb 실행
 2.cmd를 실행시켜서 mongodb의 bin파일 경로까지 가세요.
 
 3.그 뒤 **mongod --dbpath D:\한 곳에 모은 폴더 이름\var**을 입력하고 **waiting connection 포트번호** 이런 식으로 뜨면 성공한겁니다.(C드라이브면 C로) 
+
+Robo 3T 실행 및 확인
+===================
+1. 설치한 Robo 3T를 실행하세요. 
