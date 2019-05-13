@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script src="/socket.io/socket.io.js"></script> 
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    var socket=null; 
+	var timer=null;
+	$(document).ready(function(){ 
+		socket=io.connect();	//node.js가 열려있는 3000포트와 연결
+		// Node.js보낸 데이터를 수신하는 부분
+		socket.on("socket_evt_mqtt", function(data){
+			data=JSON.parse(data);
+			$("#mqttlist").html('<li>'+data.tmp+'('+data.hum+'%)'+'</li>');	//.html을 .append로 바꾸면 계속 나옴
+		});
+		if(timer==null){
+			timer=window.setInterval("timer1()", 1000);	//1초에 한 번씩 데이터를 쏜다.
+		}
+    });
+</script>
+</head>
+</html>
