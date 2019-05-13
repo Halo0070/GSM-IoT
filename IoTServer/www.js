@@ -63,3 +63,7 @@ io.on("connection", function(socket){
 		client.publish("led", obj.led+'');
 	});	
 });
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
