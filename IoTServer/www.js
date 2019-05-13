@@ -47,3 +47,19 @@ client.on("message", function(topic, message){
 });
 
 //--MongoDB--->Node.js--->HTML(javascript)|<---IE,Android(모니터링)
+var io=require('socket.io')(server);
+io.on("connection", function(socket){ 
+	console.log("web connection...");
+	socket.on("socket_evt_mqtt", function(data){ 
+		var dht11=dbObj.collection("dht11");
+		dht11.find({}).sort({_id:-1}).limit(1).toArray(function(err,results){ //뒤집어서 맨 위에 있는 거 하나 가져오기
+			if(!err){	//에러가 아니면
+				socket.emit("socket_evt_mqtt", JSON.stringify(results[0]));	//emit로 값 쏘기
+			}
+		});
+	});
+	socket.on("socket_evt_led", function(data){
+		var obj=JSON.parse(data);
+		client.publish("led", obj.led+'');
+	});	
+});
