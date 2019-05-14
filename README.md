@@ -37,3 +37,5 @@ mongodb 실행
 Robo 3T 실행 및 확인
 ===================
 1. 설치한 Robo 3T를 실행하세요. 
+
+2. create를 눌러 localhost를 지정하고 save하세요.(localhost는 위의 waiting connection 포트번호의 포트번호를 뜻하고 아마 자동으로 지정 될 것입니다.
