@@ -18,7 +18,15 @@
 		if(timer==null){
 			timer=window.setInterval("timer1()", 1000);	//1초에 한 번씩 데이터를 쏜다.
 		}
-    });
+	});
+	function timer1(){
+		socket.emit("socket_evt_mqtt", JSON.stringify({}));
+		console.log("-------------");
+	}
+	function LedOnOff(value){
+		alert(JSON.stringify({led:Number(value)}));	// {"led": 1}, {"led": 2} 이런 식으로 표현
+		socket.emit("socket_evt_led", JSON.stringify({led:Number(value)}));
+	}
 </script>
 </head>
 </html>
