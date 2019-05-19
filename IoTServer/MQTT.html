@@ -9,7 +9,7 @@
     var socket=null; 
 	var timer=null;
 	$(document).ready(function(){ 
-		socket=io.connect();	//node.js가 열려있는 3000포트와 연결
+		socket=io.connect();	//node.js가 열려있는 3000포트와 연결함.
 		// Node.js보낸 데이터를 수신하는 부분
 		socket.on("socket_evt_mqtt", function(data){
 			data=JSON.parse(data);
@@ -24,7 +24,7 @@
 		console.log("-------------");
 	}
 	function LedOnOff(value){
-		alert(JSON.stringify({led:Number(value)}));	// {"led": 1}, {"led": 2} 이런 식으로 표현
+		alert(JSON.stringify({led:Number(value)}));	// {"led": 1}, {"led": 2} 이런 식으로 표현 됨.
 		socket.emit("socket_evt_led", JSON.stringify({led:Number(value)}));
 	}
 </script>
