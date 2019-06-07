@@ -32,6 +32,9 @@ mongodb-win32-x86_64-2008plus-ssl-4.0.6-signed.msi 다운(https://www.mongodb.or
 
 
 4.이클립스에서 www파일을 실행(컴파일)하십시오.
+오류없이 컴파일이 되면 아래와 같이 콘솔 메시지가 뜹니다.
+![image](https://user-images.githubusercontent.com/28949844/59105965-287af500-8970-11e9-8b04-318c5b7cacf2.png)
+
 
 mongodb 실행
 ===========
